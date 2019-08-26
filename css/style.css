@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+} 
+
+button {
+    border: none;
+    background: none;
+}
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    background: #ababab;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20vh;
+}
+
+.timer__text {
+    font-size: 2rem;
+    text-align: center;
+    flex-basis: 100%;
+    align-self: center;
+}
+
+.timer-btn {
+    margin-right: 1rem;
+}
+
+.i-start,
+.i-pause,
+.i-reset {
+    cursor: pointer;
+}
+
+.timer__pause {
+    display: none;
+}
+
+.i-start:hover,
+.i-pause:hover,
+.i-reset:hover {
+    transform: scale(1.2);
+    transition: all 0.15s ease-in-out;
+}
+
+.timer__start:focus,
+.timer__pause:focus,
+.timer__reset:focus {
+    outline: none;
+} 
